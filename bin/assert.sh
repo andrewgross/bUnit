@@ -14,7 +14,7 @@ print_output() {
 assert_equal() {
 # Assert that two values are equal
 
-    if [[ "${1}" -eq "${2}" ]]
+    if [[ "${1}" == "${2}" ]]
     then
         print_output success
         return 0
@@ -28,7 +28,7 @@ assert_equal() {
 assert_not_equal() {
 # Assert that two values are not equal
 
-    if [[ "${1}" -ne "${2}" ]]
+    if [[ "${1}" != "${2}" ]]
     then
         print_output success
         return 0
@@ -85,7 +85,7 @@ assert_true() {
 
 assert_false() {
 
-    if [[ ${1} -ne true ]]
+    if [[ "${1}" -ne true ]]
     then
         print_output success
         return 0
@@ -101,7 +101,7 @@ assert_command_success() {
     local command=${1}
 
     shift
-    eval command $*
+    eval $command $*
     result=$?
     if [[ "${result}" -eq true ]]
     then
@@ -119,7 +119,7 @@ assert_command_failure() {
     local command=${1}
 
     shift
-    eval command $*
+    eval $command $*
     result=$?
     if [[ "${result}" -ne true ]]
     then

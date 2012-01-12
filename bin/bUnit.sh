@@ -3,6 +3,7 @@
 # http://www.linuxjournal.com/content/return-values-bash-functions
 
 calculate_statistics() {
+# Print out pretty numbers
 
     local bunit_output_file=${BUNIT_HOME}/output/results.txt
     local success_count=$(cat ${bunit_output_file} | grep -c "\[SUCCESS\]")

@@ -1,5 +1,18 @@
+[SUCCESS] for assert_command_success in test_assert_command_success
+[SUCCESS] for assert_command_success in test_assert_command_success
+[SUCCESS] for assert_command_success in test_assert_command_success
+[SUCCESS] for assert_equal in test_assert_equal
+[SUCCESS] for assert_equal in test_assert_equal
+[SUCCESS] for assert_equal in test_assert_equal
+[SUCCESS] for assert_equal in test_assert_equal
 [SUCCESS] for assert_false in test_assert_false
 [SUCCESS] for assert_false in test_assert_false
+[SUCCESS] for assert_not_equal in test_assert_not_equal
+[SUCCESS] for assert_not_equal in test_assert_not_equal
+[SUCCESS] for assert_not_equal in test_assert_not_equal
+[SUCCESS] for assert_not_equal in test_assert_not_equal
+[SUCCESS] for assert_not_equal in test_assert_not_equal
+[SUCCESS] for assert_not_equal in test_assert_not_equal
 [SUCCESS] for assert_not_null in test_assert_not_null
 [SUCCESS] for assert_not_null in test_assert_not_null
 [SUCCESS] for assert_not_null in test_assert_not_null
@@ -11,6 +24,7 @@
 [SUCCESS] for assert_true in test_assert_true
 [SUCCESS] for assert_true in test_assert_true
 [SUCCESS] for assert_true in test_assert_true
-Total Tests:      13
-Successful Tests: 13
+[SUCCESS] for assert_true in test_assert_true
+Total Tests:      27
+Successful Tests: 27
 Failed Tests:     0
