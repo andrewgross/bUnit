@@ -98,13 +98,28 @@ test_assert_not_equal() {
 }
 
 test_assert_command_success() {
+    # These two will still need some more testing
 
-    assert_command_success echo
+    assert_command_success echo >/dev/null
     assert_command_success true
-    assert_command_success git status
-
+    assert_command_success cd .
 
     # These should fail
     # assert_command_success false
+    # assert_command_success rm sdfgsdfgs
+
+}
+
+test_assert_command_failure() {
+    # These two will still need some more testing
+
+    assert_command_failure false
+    assert_command_failure rm sdfgsdfgs 2>/dev/null
+    assert_command_failure ping 2>/dev/null
+
+    # These should fail
+    # assert_command_failure echo
+    # assert_command_failure true
+    # assert_command_failure cd .
 
 }

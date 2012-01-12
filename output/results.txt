@@ -1,3 +1,6 @@
+[SUCCESS] for assert_command_failure in test_assert_command_failure
+[SUCCESS] for assert_command_failure in test_assert_command_failure
+[SUCCESS] for assert_command_failure in test_assert_command_failure
 [SUCCESS] for assert_command_success in test_assert_command_success
 [SUCCESS] for assert_command_success in test_assert_command_success
 [SUCCESS] for assert_command_success in test_assert_command_success
@@ -25,6 +28,6 @@
 [SUCCESS] for assert_true in test_assert_true
 [SUCCESS] for assert_true in test_assert_true
 [SUCCESS] for assert_true in test_assert_true
-Total Tests:      27
-Successful Tests: 27
+Total Tests:      30
+Successful Tests: 30
 Failed Tests:     0
