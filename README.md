@@ -2,14 +2,13 @@ bunit.sh
 
 A simple unit testing framework for bash.  The name is a bit misleading since it doesn't quite follow the xUnit style.
 
-Usage:
-./bunit.sh tests.txt my_extra_functions
+Setup (.profile/.bash_profile):
+export BUNIT_HOME=/path/to/bUnit
+export PATH=$PATH:${BUNIT_HOME}/bin
 
-tests.txt should have a listing of tests that can be called, with appropriate arguments and assertions in a format like the example file in this repository.
+When running bUnit.sh it will look recursively for any files ending in Test.sh.  
 
-my_extra_functions should be a location I can source to put any necessary functions into the environment.
+These files will need to import the assert functions at the top. The test files should have functions that can be imported and run by bUnit.  
+See the tests included with bUnit for examples and run them to make sure everything works!
 
-The output is printed to STDOUT and a file in the same location as your input file with "results-" prepended
-
-Ex: ./bunit.sh ~/Projects/My_Project/tests/tests.txt ~/Projects/My_Project/functions/my_functions.sh
-
+I will add reporting to files and statistics soon.
