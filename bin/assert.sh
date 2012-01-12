@@ -4,9 +4,9 @@ print_output() {
 
     if [[ "${1}" == "success" ]]
     then
-        echo  "[SUCCESS] for ${FUNCNAME[1]} in ${FUNCNAME[2]}"
+        echo  "[SUCCESS] for ${FUNCNAME[1]} in ${FUNCNAME[2]}" | tee -a ${BUNIT_HOME}/output/results.txt
     else
-        echo  "[FAILURE] for ${FUNCNAME[1]} in ${FUNCNAME[2]}"
+        echo  "[FAILURE] for ${FUNCNAME[1]} in ${FUNCNAME[2]}" | tee -a ${BUNIT_HOME}/output/results.txt
     fi
 
 }

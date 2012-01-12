@@ -2,9 +2,21 @@
 # If the eval is confusing
 # http://www.linuxjournal.com/content/return-values-bash-functions
 
+calculate_statistics() {
+
+    local bunit_output_file=${BUNIT_HOME}/output/results.txt
+    local success_count=$(cat ${bunit_output_file} | grep -c "\[SUCCESS\]")
+    local fail_count=$(cat ${bunit_output_file} | grep -c "\[FAILURE\]")
+    local total_tests=$(echo $(($success_count+$fail_count)))
+
+    echo "Total Tests:      ${total_tests}" | tee -a ${bunit_output_file}
+    echo "Successful Tests: ${success_count}" | tee -a ${bunit_output_file}
+    echo "Failed Tests:     ${fail_count}" | tee -a ${bunit_output_file}
+
+}
+
 find_test_files() {
 # Look  recursively for any files that have tests
-
 
     local  __resultvar=$1
 
@@ -35,7 +47,6 @@ get_test_functions() {
 
     eval $__resultvar="'${functions}'"
 
-
 }
 
 run_tests() {
@@ -52,8 +63,9 @@ run_tests() {
 
 }
 
+rm -f ${BUNIT_HOME}/output/results.txt
 run_tests
-
+calculate_statistics
 
 
 

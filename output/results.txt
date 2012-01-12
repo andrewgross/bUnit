@@ -1,0 +1,16 @@
+[SUCCESS] for assert_false in test_assert_false
+[SUCCESS] for assert_false in test_assert_false
+[SUCCESS] for assert_not_null in test_assert_not_null
+[SUCCESS] for assert_not_null in test_assert_not_null
+[SUCCESS] for assert_not_null in test_assert_not_null
+[SUCCESS] for assert_not_null in test_assert_not_null
+[SUCCESS] for assert_null in test_assert_null
+[SUCCESS] for assert_null in test_assert_null
+[SUCCESS] for assert_null in test_assert_null
+[SUCCESS] for assert_true in test_assert_true
+[SUCCESS] for assert_true in test_assert_true
+[SUCCESS] for assert_true in test_assert_true
+[SUCCESS] for assert_true in test_assert_true
+Total Tests:      13
+Successful Tests: 13
+Failed Tests:     0
