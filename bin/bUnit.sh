@@ -59,7 +59,7 @@ run_tests() {
 
     for test in ${tests}
     do
-        ${test}
+        (${test})
     done
 
 }
